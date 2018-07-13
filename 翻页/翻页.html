@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Microsoft</title>
+</head>
+ <style>
+ #div1{
+ width:400px;
+ position:relative;
+-webkit-perspective:10;
+-webkit-perspective-origin:left;
+ margin-left:200px;
+ }
+ #div1>div{
+ width:400px;height:400px;
+ transition:1s;
+ backface-visibility:hidden;
+ }
+ #div1>div:nth-child(1){
+  background-color:yellow;
+ transform:rotateY(180deg);
+ }
+ #div1>div:nth-child(2){
+ background:url(img/img1.jpg);
+ position:absolute;
+ top:0;
+ left:0;
+ }
+  #div1:hover > div:nth-child(1){
+  transform:rotateY(0deg);
+  transform-origin:left;
+  }
+  #div1:hover > div:nth-child(2){
+  transform:rotateY(180deg);
+  transform-origin:left;
+  }
+ </style>
+<body>
+<div id="div1">
+<div>6666666666666666666666666666666666666666</div>
+<div></div>
+</div>
+</body>
+</html>

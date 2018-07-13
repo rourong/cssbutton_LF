@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Microsoft</title>
+</head>
+ <style>
+ div{
+ display:inline-block;
+ }
+ div:nth-child(1){
+  transform:rotate(-10deg);
+  transition:1.5s;
+  transform-origin:0 100%;
+ }
+ div:nth-child(2){
+ transition:1s;
+ transition-delay:0.4s;
+ transform-origin:100% 100%;
+ }
+
+ div:nth-child(1):active{
+transform:rotate(35deg);
+}
+div:nth-child(1):active+div{
+transform:scale(.5);
+}
+ </style>
+<body>
+<div><img src="img/exam-004.png" ></div>
+<div><img src="img/exam-003.png"></div>
+</body>
+</html>
