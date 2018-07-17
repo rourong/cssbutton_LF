@@ -1,0 +1,107 @@
+
+
+
+.main{
+	position: relative;
+	width: 200px;
+	height:200px;
+	transform-style: preserve-3d;
+    
+	perspective: 1200;
+	
+    margin:150px auto;
+}
+.main div{
+	position: absolute;top:0;left:0;
+	width: 200px;
+	height: 200px;
+	opacity:.5;
+	transition:2s;
+}
+.main:hover div{
+	border-radius:50%;
+	
+}
+.main:hover .blue{
+	
+	transform: translateZ(200px);
+	
+}
+
+.main:hover .red{
+
+	transform: rotateY(90deg) translateZ(200px);
+	
+}
+.main:hover .green{
+
+	transform: rotateY(90deg) translateZ(-200px);
+	
+}
+.main:hover .pink{
+
+	transform: rotateX(90deg) translateZ(200px);
+	
+}
+	
+	.main:hover .yellow{
+	
+	transform: rotateX(90deg) translateZ(-200px);
+	
+}
+.main:hover .orange{
+	
+	transform: translateZ(-200px);
+	
+}
+.blue {
+	transform: translateZ(100px);
+	background-color:blue;
+    
+
+}
+.red {
+	transform: rotateY(90deg) translateZ(100px);
+
+	background-color:red;
+	
+}
+.green {
+	transform: rotateY(90deg) translateZ(-100px);
+
+	background-color:green;
+
+	
+}
+.pink {
+	transform: rotateX(90deg) translateZ(100px);
+
+	background-color:pink;
+
+}
+.yellow {
+	transform: rotateX(90deg) translateZ(-100px);
+
+	background-color:yellow;
+
+	
+}
+.orange {
+	transform: translateZ(-100px);
+	background-color:orange;
+
+	
+}
+
+	
+/*
+@keyframes fen{
+	0%{transform: rotateY(360deg);}
+	20%{}
+	
+	
+	
+	30%{transform: rotateZ(-30deg) scale(.8);border-radius:50%;}
+	
+}
+*/

@@ -1,0 +1,81 @@
+body{
+	width:99%;
+	height:100%;
+	background-color:rgb(202,202,202);
+	text-align:center;
+}
+body>span:nth-child(1){
+	font-size:40px;
+    color:white;
+	margin:5% 0;
+	display:inline-block;
+}
+input{
+	width:65%;
+	height:30px;
+	border-radius:15px;
+	border-style:none;
+	border:1px white solid;
+	outline:none;
+	text-align:center;
+	margin:15px 0;
+	background-color:rgba(0,0,0,0);
+}
+i{transition:0.15s;
+display:inline-block;
+}
+form>input:focus+i{
+	color:blue;
+	transform:scale(1.2);
+}
+button{
+	width:65%;
+	height:30px;
+	border-radius:15px;
+	outline:none;
+	border-style:none;
+	margin:15px 0;
+	color:white;
+	cursor:pointer;
+}
+.denglu{
+	background-color:rgb(8,129,191);
+}
+.zhuce{
+	background-color:rgb(8,190,135);
+}
+footer{
+	margin-top:3%
+	
+}
+footer p{
+	cursor:pointer;
+	font-size:15xp;
+	color:white;
+	margin-top:10px;
+}
+footer span{
+	font-size:15px;
+	color:white;
+	cursor:pointer;
+}
+footer i{
+	margin:0 5px;
+	
+}
+form{
+	position:relative;
+}
+.fa-user{
+	position:absolute;
+	left:22%;
+	top:9%;
+	color:white;
+}
+.fa-unlock-alt{
+	position:absolute;
+	left:22%;
+	top:37%;
+	color:white;
+}
+.fa{cursor:pointer;}
